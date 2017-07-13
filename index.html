@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aspire Advisory Group</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./style/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("./images/blue-background.jpg");
+    min-height: 90%;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#services" class="w3-bar-item w3-button">SERVICES</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#googleMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+  <img src="./images/aspirelogo.png"><br>
+    <span class="w3-text-black w3-hide-small" style="font-size:100px">Aspire Advisory Group</span>
+    <span class="w3-text-black w3-hide-large w3-hide-medium" style="font-size:60px"><b>Aspire Advisory Group</b></span>
+    <h2>Take your business to the next level</h2><br>
+    <p><a href="#services" class="w3-button w3-xxlarge w3-black">View Our Services</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="services">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Our Services</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Marketing');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-teal">Marketing</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Sales');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-teal">Sales</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Financial');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-teal">Financial Management</div>
+      </a>
+    </div>
+
+    <div id="Marketing" class="w3-container menu w3-padding-32 w3-white">
+      
+      <p class="w3-text-grey">Because Marketing is important – don’t you think?</p>
+      <hr>
+      <p class="w3-text-grey">Spend some time considering your client’s point of view.
+      <br>
+      How are you perceived by them?
+      <br>
+      Can they understand who you are and what you do within 30 seconds?  Do they know who you can help?
+      <br>
+      Even a fad diet is specific, and you should be too!
+      <br>
+      If you aren’t, you are losing customers because they don’t think you are talking to them!  Like talking to a 6 year old with an iPad…”I don’t hear you, dad.  I’m watching the iPad.”</p>
+      <hr>
+      <p class="w3-text-grey">Build consistency, be different, and consider ALL of your marketing options – not just a website and social media.
+      <br>
+      Even if you don’t call us, that advice alone just increased your revenue 30%.  You’re welcome.</p>
+      
+    </div>
+
+    <div id="Sales" class="w3-container menu w3-padding-32 w3-white">
+      
+      <p class="w3-text-grey">VERY IMPORTANT – without sales, there is no business.
+      <hr>
+      How do you sell?
+      <br>
+      To whom?
+      <br>
+      By what means?
+      <br>
+      Why?
+      <br>
+      Why?
+      <br>
+      Why?
+      <br>
+      What’s your process?
+      <br>
+      Are you happy with it?
+      <hr>
+      We help answer these questions, build a strategy, and implement it in your company.
+
+      I’m sure your product or service is the best one out there, but if you aren’t selling it, NO ONE KNOWS!
+
+      Let’s generate some methods to make sure the world knows how great your product or service really is!</p>
+    </div>
+
+
+    <div id="Financial" class="w3-container menu w3-padding-32 w3-white">
+      
+      <p class="w3-text-grey">You have to manage the money well to grow.
+      <hr>
+      If you don’t….
+      <br><br>
+….you’ll be working for someone else again real soon.</p>
+    </p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <h2>Besides a sense of humor and levity, we have experience and understanding in the nuances between being successful and being…well….just ok.
+    <br>
+    The best business book ever written was the E-myth Revisited by Michael Gerber.  I hope you read it.  If not, that’s ok, here’s a quick recap…specialists start businesses.  Specialists work their specialty.  Specialists must transition to generalists, work on the business and not in the business, and hire specialists.
+    <br>
+    It’s that simple….and most new business owners will struggle for most of their business owning careers to understand it.
+    <br>
+    Fortunately for you…you found us, and we read the book.  We lived the book. We help businesses and business owners overcome their challenges with compassion, understanding, empathetic reality checks, and straight talk to set you and your business on the right path.
+    <br>
+    We specialize in, arguably, the most critical areas of a business – Sales development, Marketing development, and Financial Management.  We’ll help with HR too…if requested.</h2>
+   <!--  <p><strong>President & Founder</strong><br>Christian Mostert<img src="./images/christian.jpg" style="width:150px" class="w3-circle" alt="Christian"></p> -->
+  
+  </div>
+</div>
+
+<!-- Contact (with google maps) -->
+
+
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact Us</h1>
+    <p>Don’t leave a comment on a blog agreeing with us…talk to a real person!</p>
+    <p>Here’s how:
+    <br>
+    867-5309…..only kidding.  Get it?…the song.</p>
+    <p class="w3-xxlarge">Seriously, this way works: Christian (at) AspireAdvisoryGroup.com or 267-397-6672</p>
+    <p>Or fill out the from below and we'll get back to you as soon as possible!</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Phone Number" required name="Number"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Suggestion \ Request" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="http://tryvitris.com/" title="Vitris" target="_blank" class="w3-hover-text-green">VITRIS</a></p>
+</footer>
+
+<script>
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-teal", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-teal";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
